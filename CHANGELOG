@@ -1,0 +1,28 @@
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [0.2.0] - 2026-09-04
+
+### Added
+- **3D Geospatial Visualization:**
+  - Integrated CesiumJS and Resium into the React frontend.
+  - Configured `vite-plugin-cesium` in `vite.config.js` to manage static Cesium assets.
+  - Added initial 3D interactive `Globe` component rendered inside `App.jsx`.
+- **Documentation:** Initial `CHANGELOG.md`.
+
+---
+
+## [0.1.0] - Initial Setup
+
+### Added
+- **Repository Structure:** Monorepo architecture split into `backend/` and `frontend/`.
+- **Backend Setup:**
+  - Configured Django project (`core`) and app routes (`api`).
+  - Integrated `djangorestframework` and `django-cors-headers`.
+  - Added initial endpoint (`/api/hello/`).
+- **Frontend Setup:**
+  - Initialized React application with Vite.
+  - Connected API fetching layer to the Django backend.
+- **Documentation:** Initial `README.md` and `.gitignore`.

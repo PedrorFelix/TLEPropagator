@@ -1,5 +1,6 @@
 // frontend/src/App.jsx
 import { useEffect, useState } from 'react';
+import Globe from './components/Globe';
 
 function App() {
   const [message, setMessage] = useState('');
@@ -19,9 +20,8 @@ function App() {
   }, []);
 
   return (
-    <div style={{ padding: '2rem', fontFamily: 'sans-serif' }}>
-      <h1>React + Django App</h1>
-      {loading ? <p>Loading backend...</p> : <p>Response: <strong>{message}</strong></p>}
+    <div style={{ width: '100vw', height: '100vh' }}>
+      <Globe />
     </div>
   );
 }
