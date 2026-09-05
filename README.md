@@ -51,7 +51,7 @@ python -m venv .venv
 # On windows
 .venv\Scripts\activate
 # On another OS
-source .venv/bin/ctivate
+source .venv/bin/activate
 
 pip install -r requirements.txt
 python manage.py migrate
@@ -73,7 +73,7 @@ cd backend
 # On Windows
 .venv\Scripts\activate
 # On another OS
-source .venv/bin/ctivate
+source .venv/bin/activate
 
 #Return to repo root
 cd ..
