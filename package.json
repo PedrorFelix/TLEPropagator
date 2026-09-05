@@ -5,7 +5,7 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "backend": "cd backend && .venv\\Scripts\\activate && python manage.py runserver",
+    "backend": "cd backend && python manage.py runserver",
     "frontend": "cd frontend && npm run dev",
     "dev": "concurrently -k -p \"[{name}]\" -c \"blue.bold,magenta.bold\" -n \"DJANGO,REACT\" \"npm run backend\" \"npm run frontend\""
   },

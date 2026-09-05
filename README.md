@@ -42,7 +42,43 @@ git clone https://github.com/PedrorFelix/TLEPropagator.git
 cd TLEPropagator
 ```
 
-#### TODO: WRITE COMMAND TO INSTALL VENV AND NPM, WRITE USER INSTRUCTION HERE
+#### 2. Setup the Backend
+```bash
+# Starting in repo root
+cd backend
+python -m venv .venv
+
+# On windows
+.venv\Scripts\activate
+# On another OS
+source .venv/bin/ctivate
+
+pip install -r requirements.txt
+python manage.py migrate
+```
+
+#### 3. Setup the Frontend
+```bash
+# Starting at the repo root
+cd frontend
+npm install
+```
+
+### Starting the server
+
+```bash
+# From repo root
+cd backend
+
+# On Windows
+.venv\Scripts\activate
+# On another OS
+source .venv/bin/ctivate
+
+#Return to repo root
+cd ..
+npm run dev
+```
 
 ## API Endpoints
 

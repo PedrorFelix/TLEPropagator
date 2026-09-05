@@ -1,6 +1,8 @@
 backend/.venv/
 backend/venv/
+.env
 *.venv
+*.sqlite3
 
 **/__pycache__/
 *.py[cod]
